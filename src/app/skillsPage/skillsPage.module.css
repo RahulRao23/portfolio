@@ -1,0 +1,65 @@
+.skillPage {
+	color: var(--text-color);
+  /* background-color: lightblue; */
+	height: 100%;
+	margin-right: 10vw;
+  padding-block: 10vh;
+	overflow: visible;
+}
+
+.skillContainer {
+	/* background-color: bisque; */
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin-bottom: 3rem;
+}
+
+.skillHeader {
+	font-weight: bold;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.skillImageList {
+	/* background-color: red; */
+	width: 100%;
+}
+
+.skillImageContainer {
+	position: relative;
+	display: inline-block;
+}
+
+.skillImageContainer img {
+	/* background-color: red; */
+	height: 3rem;
+	width: auto;
+	padding-inline: 2vw;
+	margin-top: 1vh;
+	display: block;
+	filter: blur(0);
+	transition: filter 0.3s ease-in-out;
+}
+
+.imageText {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-weight: bold;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.skillImageContainer:hover img {
+	filter: blur(5px);
+}
+
+.skillImageContainer:hover .imageText {
+	opacity: 1;
+	cursor: pointer;
+}

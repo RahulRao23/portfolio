@@ -6,8 +6,8 @@
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 33, 74, 153;
+  --background-end-rgb: 33, 74, 153;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -43,8 +43,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-start-rgb: 33, 74, 153;
+    --background-end-rgb: 33, 74, 153;
 
     --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
     --secondary-glow: linear-gradient(
@@ -70,6 +70,19 @@
     --callout-border-rgb: 108, 108, 108;
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
+
+    --main_container-width: 70vw;
+    --elipse-radius: 30vw;
+    --elipse-horizontal-position: calc(var(--main_container-width) - (var(--elipse-radius) / 2));
+    --elipse-vertical-position: calc(50vh - (var(--elipse-radius) / 2));
+
+    --elipse-radius-onhover: 45vw;
+    --elipse-horizontal-position-onhover: calc(var(--main_container-width) - (var(--elipse-radius-onhover) / 2));
+    --elipse-vertical-position-onhover: calc(50vh - (var(--elipse-radius-onhover) / 2));
+
+    --text-color: #6D23CD;
+    --pink: #E38484;
+    
   }
 }
 
@@ -82,7 +95,7 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -95,10 +108,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-a {
+/* a {
   color: inherit;
   text-decoration: none;
-}
+} */
 
 @media (prefers-color-scheme: dark) {
   html {

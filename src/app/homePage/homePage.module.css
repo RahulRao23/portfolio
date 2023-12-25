@@ -1,0 +1,38 @@
+.homePage {
+	color: var(--text-color);
+  /* background-color: lightblue; */
+	height: 100%;
+	margin-right: 10vw;
+	font-weight: lighter;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+  padding-block: 10vh;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.header {
+	font-size: 5rem;
+}
+
+.intro {
+	font-size: 2rem;
+}
+
+.links {
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contactImages {
+	width: 3vw;
+	height: 3vw;
+	min-width: 3vw;
+	min-height: 3vw;
+}
