@@ -1,3 +1,7 @@
+Hey, check out my [Porfolio](https://rahulrao.vercel.app/) developed with Next.js.
+
+Follow the instructions mentioned below to setup the project in your system.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
